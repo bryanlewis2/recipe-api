@@ -1,3 +1,5 @@
 build:
   docker:
-    web: Dockerfile
+    web: Dockerfile  # Specify your Dockerfile here
+run:
+  web: gunicorn config.wsgi:application --log-file - --bind 0.0.0.0:$PORT
