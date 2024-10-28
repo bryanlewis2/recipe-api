@@ -9,7 +9,7 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of your application code
-COPY . /app/
+COPY . .
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
