@@ -16,5 +16,5 @@ ENV PYTHONUNBUFFERED=1
 ENV DJANGO_SETTINGS_MODULE=config.settings
 
 # Run the Django development server (optional for production)
-CMD ["gunicorn", "config.wsgi:application", "--log-file", "-", "--bind", "0.0.0.0:$PORT"]
+CMD ["gunicorn", "config.wsgi:application", "--log-file", "-", "--bind", "0.0.0.0:3000"]
 
